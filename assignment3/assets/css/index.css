@@ -1,0 +1,184 @@
+html {
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    cursor: context-menu;
+}
+
+/*setting line spacing*/
+.pageSetup {
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    font: sans-serif;
+    color: white;
+    padding: 100px 20px 200px;
+}
+/*Scroll tracker bar background*/
+.progress {
+    width: 100%;
+    background-color: grey;
+    position: fixed;/*This is so it stays with the user when the scroll down*/
+    left: 0;
+    top: 0;
+    height: 20px;
+    z-index:2;/*This keeps it on top of other content*/
+}
+
+/*Percentage bar on top of the .progress*/
+.scroll-tracker {
+    width: 1%;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height:20px;
+    z-index:2;
+}
+/*Adding the canberra background image and setting the style for the top part of the page*/
+header {
+    background-color: dimgray;
+    background-image: url(../img/ph.jpg);
+    background-size:cover;
+    text-align: center;
+    padding: 10px 0px 530px 0px;
+    font-family: "Anton", sans-serif;
+    color:darkslategray;
+    font-size: 40px;
+    text-shadow: 4px 4px 0px black, 4px 4px 8px white;
+
+}
+
+/*add the line and adding the relativity to the information blocks*/
+.line {
+    padding-top:50px;
+    z-index: 1;
+    position: relative;
+    content: '';
+    position: absolute;
+    height: auto;
+    width: 2px;
+    background-color: white;
+    left: 50%;
+    margin-top: 50px;
+}
+
+/*Adding the scroll down styling*/
+.title {
+    font: bold Open Sans Condensed, sans-serif;
+    font-size: 52px;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 250px;
+    transition: all 0.8s ease-in-out;
+}
+
+
+/*Formats the information boxes*/
+.event {
+    background-color: whitesmoke;
+    color: darkslategrey;
+    font-size: x-large;
+    padding: 15px;
+    margin: 60px 20px;
+    width: 550px;
+    position: relative;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;/*Change the mouse image so user knows to click*/
+}
+
+
+#year {
+    font-size: 30px;
+    font: bold;
+    font-family: "Anton", sans-serif;
+    text-align: center;
+}
+
+/*addin the circles on the line before the event class elements*/
+.event:before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 9px); /*Had to add the 9px to make the dot in the middle of the box*/
+    left: -27px; /*added to keep right box dots on the line*/
+    width: 16px; /*circle width*/
+    height: 16px; /*circle height*/
+    border-radius: 50%; /*changing the circle shape Note: like the up and down buttons*/
+    background-color: white;
+}
+
+/* Dot placements for left and right boxes 
+    These two place the dots in the correct positions
+    I used the nth-child so I could seperate the elements by odds and evens and place them either side of the line
+*/
+    .event:nth-child(even) {
+        margin-left: calc(50% - 571px);
+    }
+
+    .event:nth-child(even):before {
+            left: calc(100% + 14px);
+    }
+
+
+
+/*Styling for the button that takes the user to the top of the page*/
+#topbutton {
+    position: fixed;/*make the position fixed so the button stays in the same location as the page scrolls*/
+    right: 20px;
+    bottom: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; /*make the button round*/
+    align-content: center;
+    opacity: 0.4;
+    cursor: pointer; /*Change the mouse image so user knows to click*/
+}
+
+/*Styling for the button that takes the user to the bottom of the page*/
+#bottombutton {
+    position: fixed; /*make the position fixed so the button stays in the same location as the page scrolls*/
+    left: 20px;
+    top: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; /*make the button round*/
+    align-content: center;
+    opacity: 0.4;
+    cursor: pointer; /*Change the mouse image so user knows to click*/
+}
+
+/*police tape image*/
+.police {
+    position:absolute;/*This is so the police tape can scroll side ways as the user scrolls down*/
+    width:100%; 
+}
+
+/*police tape image y position*/
+#t1 {
+    top: 925px;
+}
+
+/*police tape image 2 y position*/
+#t2 {
+    top: 1060px;
+}
+
+/*Images that appear in the information boxes 
+  Starting as 0px so the box remains small until the image is clicked
+*/
+.blockImg {
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+    padding: 0px 100px 0px 90px;
+}
+
+canvas{
+    z-index:2;
+}
+

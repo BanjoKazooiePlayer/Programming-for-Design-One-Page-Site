@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- loading uo the css and javaScript and adding the google api for the top and bottom buttons -->
+    <title>Canberra Espinage</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="assets/js/index.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div id="top">
+        <header>
+            <h1>History of Espionage in Canberra</h1>
+        </header>
+    </div>
+    <div class="pageSetup">
+        <!--Adding the div for the progress bar-->
+        <div class="progress">
+            <div class="scroll-tracker"></div>
+        </div>
+        <div class="title">Scroll Down</div>
+        <!-- Two police tape image -->
+        <img class="police" id="t1" src="assets/img/police.png" />
+        <img class="police" id="t2" src="assets/img/police.png" />
+        <section class="line">
+            <section id="1940">
+                <!-- event class is used in css to get the boxes either side of the line -->
+                <div class="event" id="year"><h1>1940's</h1><img class="blockImg" src="assets/img/OIP.jpg" /></div>
+                <div class='event'>
+                    <div class='event-description'>
+                        <h1>Department of External Affairs Infiltrated</h1>
+                        <p>Josef Stalin's Soviet Union inflitrated Bert Evatt's Department of External Affairs. ASIO suspected that Bert Evatt was comprimised by the Soviet Union</p>
+                        <img class="blockImg" src="assets/img/news.jpg" />
+                    </div>
+                </div>
+                <div class='event'>
+                    <div class='event-description'>
+                        <h1>Soviet Union Recruits Spies</h1>
+                        <p>Under the leadership of Communist Party of Australia's Wally Clayton (code name: KLOD) the Soviet Union compromises Australian Government Employees Ric Throssell, Ian Milner and Jim Hill</p>
+                        <img class="blockImg" src="assets/img/Evatt.jpg" />
+                    </div>
+                </div>
+                <div class='event'>
+                    <div class='event-description'>
+                        <h1>Wally Clayton's Spies</h1>
+                        <p>The United States counter intelligence program, Venona, decrypts communication showing that Wally Clayton has 10 spies that pass him classified information and gives it to a Soviet Handler.</p>
+                        <img class="blockImg" src="assets/img/clayton.jpg" />
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="1950">
+                <div class="event" id="year"><h1>1950's</h1><img class="blockImg" src="assets/img/sputnik.jpg" /></div>
+                <div class='event'>
+                    <div class='event-description'>
+                        <h1>
+                            KGB officer in Canberra
+                        </h1>
+                        <p>KGB officer Vladimir Petrov fears assassination from the Soviet Union, so he contacts ASIO and offers information on Soviet Union Espionage in Australia in return for asylum</p>
+                        <img class="blockImg" src="assets/img/vlad.jpg" />
+                    </div>
+                </div>
+                <div class='event'>
+                    <div class='event-description'>
+                        <h1>Petrov Defects to Australia</h1>
+                        <p>Petrov defected on 3 April 1954, bringing documents from the USSR's embassy that showed USSR espionage operations in Canberra. Petrov DID NOT TELL HIS WIFE he was defecting</p>
+                        <img class="blockImg" src="assets/img/defect.jpg" />
+                    </div>
+                </div>
+                <div class='event'>
+                    <div class='event-description'>
+                        <h1>Evdokia Petrova kidnapped by the USSR</h1>
+                        <p>After kidnapping allegations the USSR sent two MVD agents to retrieve Evdokia Petrov from Australia. She was forced onto a plane by the MVD agents. When the plane was refueling in Darwin, the Australian Prime Minister, Robert Menzies ordered ASIO agents to seize her and offer her assylum. She defected 20 April 1954</p>
+                        <img class="blockImg" src="assets/img/petrov.jpg" />
+                    </div>
+                </div>
+                <div class='event'>
+                    <div class='event-description'>
+                        <h1>The World watches Evdokia Petrova</h1>
+                        <p>The images of two KGB agents forcing Evdokia Petrova onto a plane are seen around the world, showing the threat of espionage from the USSR</p>
+                        <img class="blockImg" src="assets/img/plane.jpg" />
+                    </div>
+                </div>
+                <div class='event'>
+                    <div class='event-description'>
+                        <h1>Labor Leader Compromised</h1>
+                        <p>The Director-General of ASIO tells the British Government that if Bert Evatt wins the 1954 election, they should withhold secrets from Australia</p>
+                        <img class="blockImg" src="assets/img/mi5.jpg" />
+                    </div>
+                </div>
+                <div class='event'>
+                    <div class='event-description'>
+                        <h1>Petrov Papers</h1>
+                        <p>A royal commission was undertaken to review the credibility of the papers that Vladimir Petrov gave to ASIO upon his defection. The commission found that the Soviet Union Embassy in Canberra was used as a base of operations to spy on Australia since 1943</p>
+                        <img class="blockImg" src="assets/img/paper.jpg" />
+                    </div>
+                </div>
+                <div class='event'>
+                    <div class='event-description'>
+                        <h1>A Labor Leader's credibility is destroyed</h1>
+                        <p>In 1955, after the Petrov Affair, Bert Evatt declares to the House of Represesntatives that there is no espionage attempts from the Soviet Union because the Soviet Union foreign minister ensured him there was no attempts made. This went against the advise from ASIO to the Australian Government</p>
+                        <img class="blockImg" src="assets/img/bert.jpg" />
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+    </div>
+
+    <div id="cursorPercentage">
+        <div id="percent">Test</div>
+    </div>
+
+    <!-- These buttons are placed at the bottom of the code because I move them in the css -->
+    <button id="topbutton">
+        <i class="material-icons">
+            arrow_drop_up
+        </i>
+    </button>
+
+    <button id="bottombutton">
+        <i class="material-icons">
+            arrow_drop_down
+        </i>
+    </button>
+
+</body>
+</html>
